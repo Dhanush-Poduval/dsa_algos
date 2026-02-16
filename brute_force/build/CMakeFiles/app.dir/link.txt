@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/app.dir/src/main.c.o -o app  liblin.a 
+/usr/bin/c++ CMakeFiles/app.dir/src/main.c.o -o app  liblin.a 

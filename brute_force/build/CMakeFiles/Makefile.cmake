@@ -129,4 +129,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lin.dir/DependInfo.cmake"
   "CMakeFiles/app.dir/DependInfo.cmake"
   "CMakeFiles/bubble.dir/DependInfo.cmake"
+  "CMakeFiles/insert.dir/DependInfo.cmake"
   )

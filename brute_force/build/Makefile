@@ -155,6 +155,19 @@ bubble/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/build
 .PHONY : bubble/fast
 
+#=============================================================================
+# Target rules for targets named insert
+
+# Build rule for target.
+insert: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 insert
+.PHONY : insert
+
+# fast build rule for target.
+insert/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/insert.dir/build.make CMakeFiles/insert.dir/build
+.PHONY : insert/fast
+
 src/bubble/bubble.o: src/bubble/bubble.c.o
 .PHONY : src/bubble/bubble.o
 
@@ -202,6 +215,54 @@ src/bubble_main.s: src/bubble_main.c.s
 src/bubble_main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/src/bubble_main.c.s
 .PHONY : src/bubble_main.c.s
+
+src/insertion.o: src/insertion.cpp.o
+.PHONY : src/insertion.o
+
+# target to build an object file
+src/insertion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lin.dir/build.make CMakeFiles/lin.dir/src/insertion.cpp.o
+.PHONY : src/insertion.cpp.o
+
+src/insertion.i: src/insertion.cpp.i
+.PHONY : src/insertion.i
+
+# target to preprocess a source file
+src/insertion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lin.dir/build.make CMakeFiles/lin.dir/src/insertion.cpp.i
+.PHONY : src/insertion.cpp.i
+
+src/insertion.s: src/insertion.cpp.s
+.PHONY : src/insertion.s
+
+# target to generate assembly for a file
+src/insertion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lin.dir/build.make CMakeFiles/lin.dir/src/insertion.cpp.s
+.PHONY : src/insertion.cpp.s
+
+src/insertion_main.o: src/insertion_main.cpp.o
+.PHONY : src/insertion_main.o
+
+# target to build an object file
+src/insertion_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/insert.dir/build.make CMakeFiles/insert.dir/src/insertion_main.cpp.o
+.PHONY : src/insertion_main.cpp.o
+
+src/insertion_main.i: src/insertion_main.cpp.i
+.PHONY : src/insertion_main.i
+
+# target to preprocess a source file
+src/insertion_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/insert.dir/build.make CMakeFiles/insert.dir/src/insertion_main.cpp.i
+.PHONY : src/insertion_main.cpp.i
+
+src/insertion_main.s: src/insertion_main.cpp.s
+.PHONY : src/insertion_main.s
+
+# target to generate assembly for a file
+src/insertion_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/insert.dir/build.make CMakeFiles/insert.dir/src/insertion_main.cpp.s
+.PHONY : src/insertion_main.cpp.s
 
 src/linear.o: src/linear.c.o
 .PHONY : src/linear.o
@@ -261,6 +322,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... app"
 	@echo "... bubble"
+	@echo "... insert"
 	@echo "... lin"
 	@echo "... src/bubble/bubble.o"
 	@echo "... src/bubble/bubble.i"
@@ -268,6 +330,12 @@ help:
 	@echo "... src/bubble_main.o"
 	@echo "... src/bubble_main.i"
 	@echo "... src/bubble_main.s"
+	@echo "... src/insertion.o"
+	@echo "... src/insertion.i"
+	@echo "... src/insertion.s"
+	@echo "... src/insertion_main.o"
+	@echo "... src/insertion_main.i"
+	@echo "... src/insertion_main.s"
 	@echo "... src/linear.o"
 	@echo "... src/linear.i"
 	@echo "... src/linear.s"

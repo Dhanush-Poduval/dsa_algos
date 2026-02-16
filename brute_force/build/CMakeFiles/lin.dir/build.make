@@ -97,19 +97,35 @@ CMakeFiles/lin.dir/src/bubble/bubble.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lin.dir/src/bubble/bubble.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dhanush/Desktop/dsa/brute_force/src/bubble/bubble.c -o CMakeFiles/lin.dir/src/bubble/bubble.c.s
 
+CMakeFiles/lin.dir/src/insertion.cpp.o: CMakeFiles/lin.dir/flags.make
+CMakeFiles/lin.dir/src/insertion.cpp.o: /home/dhanush/Desktop/dsa/brute_force/src/insertion.cpp
+CMakeFiles/lin.dir/src/insertion.cpp.o: CMakeFiles/lin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lin.dir/src/insertion.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lin.dir/src/insertion.cpp.o -MF CMakeFiles/lin.dir/src/insertion.cpp.o.d -o CMakeFiles/lin.dir/src/insertion.cpp.o -c /home/dhanush/Desktop/dsa/brute_force/src/insertion.cpp
+
+CMakeFiles/lin.dir/src/insertion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lin.dir/src/insertion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dhanush/Desktop/dsa/brute_force/src/insertion.cpp > CMakeFiles/lin.dir/src/insertion.cpp.i
+
+CMakeFiles/lin.dir/src/insertion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lin.dir/src/insertion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dhanush/Desktop/dsa/brute_force/src/insertion.cpp -o CMakeFiles/lin.dir/src/insertion.cpp.s
+
 # Object files for target lin
 lin_OBJECTS = \
 "CMakeFiles/lin.dir/src/linear.c.o" \
-"CMakeFiles/lin.dir/src/bubble/bubble.c.o"
+"CMakeFiles/lin.dir/src/bubble/bubble.c.o" \
+"CMakeFiles/lin.dir/src/insertion.cpp.o"
 
 # External object files for target lin
 lin_EXTERNAL_OBJECTS =
 
 liblin.a: CMakeFiles/lin.dir/src/linear.c.o
 liblin.a: CMakeFiles/lin.dir/src/bubble/bubble.c.o
+liblin.a: CMakeFiles/lin.dir/src/insertion.cpp.o
 liblin.a: CMakeFiles/lin.dir/build.make
 liblin.a: CMakeFiles/lin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblin.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library liblin.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/lin.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lin.dir/link.txt --verbose=$(VERBOSE)
 

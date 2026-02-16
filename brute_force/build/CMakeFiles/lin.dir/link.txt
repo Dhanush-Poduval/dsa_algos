@@ -1,2 +1,2 @@
-/usr/bin/ar qc liblin.a CMakeFiles/lin.dir/src/linear.c.o CMakeFiles/lin.dir/src/bubble/bubble.c.o
+/usr/bin/ar qc liblin.a CMakeFiles/lin.dir/src/linear.c.o CMakeFiles/lin.dir/src/bubble/bubble.c.o CMakeFiles/lin.dir/src/insertion.cpp.o
 /usr/bin/ranlib liblin.a

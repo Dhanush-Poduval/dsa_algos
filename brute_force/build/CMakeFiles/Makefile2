@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/dhanush/Desktop/dsa/brute_force/build
 all: CMakeFiles/lin.dir/all
 all: CMakeFiles/app.dir/all
 all: CMakeFiles/bubble.dir/all
+all: CMakeFiles/insert.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/lin.dir/clean
 clean: CMakeFiles/app.dir/clean
 clean: CMakeFiles/bubble.dir/clean
+clean: CMakeFiles/insert.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,12 +87,12 @@ clean: CMakeFiles/bubble.dir/clean
 CMakeFiles/lin.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lin.dir/build.make CMakeFiles/lin.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lin.dir/build.make CMakeFiles/lin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=5,6,7 "Built target lin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=7,8,9,10 "Built target lin"
 .PHONY : CMakeFiles/lin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 0
 .PHONY : CMakeFiles/lin.dir/rule
@@ -116,7 +118,7 @@ CMakeFiles/app.dir/all: CMakeFiles/lin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 0
 .PHONY : CMakeFiles/app.dir/rule
@@ -142,7 +144,7 @@ CMakeFiles/bubble.dir/all: CMakeFiles/lin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bubble.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bubble.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 0
 .PHONY : CMakeFiles/bubble.dir/rule
@@ -155,6 +157,32 @@ bubble: CMakeFiles/bubble.dir/rule
 CMakeFiles/bubble.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/clean
 .PHONY : CMakeFiles/bubble.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/insert.dir
+
+# All Build rule for target.
+CMakeFiles/insert.dir/all: CMakeFiles/lin.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/insert.dir/build.make CMakeFiles/insert.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/insert.dir/build.make CMakeFiles/insert.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=5,6 "Built target insert"
+.PHONY : CMakeFiles/insert.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/insert.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/insert.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles 0
+.PHONY : CMakeFiles/insert.dir/rule
+
+# Convenience name for target.
+insert: CMakeFiles/insert.dir/rule
+.PHONY : insert
+
+# clean rule for target.
+CMakeFiles/insert.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/insert.dir/build.make CMakeFiles/insert.dir/clean
+.PHONY : CMakeFiles/insert.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
