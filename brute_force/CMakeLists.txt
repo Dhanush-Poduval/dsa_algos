@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 
 project(linear_search)
 
-add_library(lin STATIC src/linear.c)
+add_library(lin STATIC src/linear.c src/bubble/bubble.c)
 
 target_include_directories(
    lin
@@ -13,6 +13,15 @@ target_include_directories(
 add_executable(
   app
   src/main.c
+)
+add_executable(
+  bubble
+  src/bubble_main.c
+)
+target_link_libraries(
+ bubble
+ PRIVATE
+ lin
 )
 target_link_libraries(
   app

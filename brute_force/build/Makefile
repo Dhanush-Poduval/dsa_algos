@@ -142,6 +142,67 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+#=============================================================================
+# Target rules for targets named bubble
+
+# Build rule for target.
+bubble: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bubble
+.PHONY : bubble
+
+# fast build rule for target.
+bubble/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/build
+.PHONY : bubble/fast
+
+src/bubble/bubble.o: src/bubble/bubble.c.o
+.PHONY : src/bubble/bubble.o
+
+# target to build an object file
+src/bubble/bubble.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lin.dir/build.make CMakeFiles/lin.dir/src/bubble/bubble.c.o
+.PHONY : src/bubble/bubble.c.o
+
+src/bubble/bubble.i: src/bubble/bubble.c.i
+.PHONY : src/bubble/bubble.i
+
+# target to preprocess a source file
+src/bubble/bubble.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lin.dir/build.make CMakeFiles/lin.dir/src/bubble/bubble.c.i
+.PHONY : src/bubble/bubble.c.i
+
+src/bubble/bubble.s: src/bubble/bubble.c.s
+.PHONY : src/bubble/bubble.s
+
+# target to generate assembly for a file
+src/bubble/bubble.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lin.dir/build.make CMakeFiles/lin.dir/src/bubble/bubble.c.s
+.PHONY : src/bubble/bubble.c.s
+
+src/bubble_main.o: src/bubble_main.c.o
+.PHONY : src/bubble_main.o
+
+# target to build an object file
+src/bubble_main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/src/bubble_main.c.o
+.PHONY : src/bubble_main.c.o
+
+src/bubble_main.i: src/bubble_main.c.i
+.PHONY : src/bubble_main.i
+
+# target to preprocess a source file
+src/bubble_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/src/bubble_main.c.i
+.PHONY : src/bubble_main.c.i
+
+src/bubble_main.s: src/bubble_main.c.s
+.PHONY : src/bubble_main.s
+
+# target to generate assembly for a file
+src/bubble_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble.dir/build.make CMakeFiles/bubble.dir/src/bubble_main.c.s
+.PHONY : src/bubble_main.c.s
+
 src/linear.o: src/linear.c.o
 .PHONY : src/linear.o
 
@@ -199,7 +260,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... bubble"
 	@echo "... lin"
+	@echo "... src/bubble/bubble.o"
+	@echo "... src/bubble/bubble.i"
+	@echo "... src/bubble/bubble.s"
+	@echo "... src/bubble_main.o"
+	@echo "... src/bubble_main.i"
+	@echo "... src/bubble_main.s"
 	@echo "... src/linear.o"
 	@echo "... src/linear.i"
 	@echo "... src/linear.s"

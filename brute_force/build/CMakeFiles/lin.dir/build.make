@@ -83,17 +83,33 @@ CMakeFiles/lin.dir/src/linear.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lin.dir/src/linear.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dhanush/Desktop/dsa/brute_force/src/linear.c -o CMakeFiles/lin.dir/src/linear.c.s
 
+CMakeFiles/lin.dir/src/bubble/bubble.c.o: CMakeFiles/lin.dir/flags.make
+CMakeFiles/lin.dir/src/bubble/bubble.c.o: /home/dhanush/Desktop/dsa/brute_force/src/bubble/bubble.c
+CMakeFiles/lin.dir/src/bubble/bubble.c.o: CMakeFiles/lin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lin.dir/src/bubble/bubble.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lin.dir/src/bubble/bubble.c.o -MF CMakeFiles/lin.dir/src/bubble/bubble.c.o.d -o CMakeFiles/lin.dir/src/bubble/bubble.c.o -c /home/dhanush/Desktop/dsa/brute_force/src/bubble/bubble.c
+
+CMakeFiles/lin.dir/src/bubble/bubble.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lin.dir/src/bubble/bubble.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dhanush/Desktop/dsa/brute_force/src/bubble/bubble.c > CMakeFiles/lin.dir/src/bubble/bubble.c.i
+
+CMakeFiles/lin.dir/src/bubble/bubble.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lin.dir/src/bubble/bubble.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dhanush/Desktop/dsa/brute_force/src/bubble/bubble.c -o CMakeFiles/lin.dir/src/bubble/bubble.c.s
+
 # Object files for target lin
 lin_OBJECTS = \
-"CMakeFiles/lin.dir/src/linear.c.o"
+"CMakeFiles/lin.dir/src/linear.c.o" \
+"CMakeFiles/lin.dir/src/bubble/bubble.c.o"
 
 # External object files for target lin
 lin_EXTERNAL_OBJECTS =
 
 liblin.a: CMakeFiles/lin.dir/src/linear.c.o
+liblin.a: CMakeFiles/lin.dir/src/bubble/bubble.c.o
 liblin.a: CMakeFiles/lin.dir/build.make
 liblin.a: CMakeFiles/lin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library liblin.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblin.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/lin.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lin.dir/link.txt --verbose=$(VERBOSE)
 
