@@ -1,0 +1,4 @@
+/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles/lin.dir
+/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles/app.dir
+/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles/edit_cache.dir
+/home/dhanush/Desktop/dsa/brute_force/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblin.a CMakeFiles/lin.dir/src/linear.c.o
+/usr/bin/ranlib liblin.a
