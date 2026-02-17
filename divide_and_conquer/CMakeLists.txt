@@ -6,6 +6,7 @@ add_library(
   binary
   STATIC
   src/binary_search.c
+  src/merge_sort.cpp
 
 )
 
@@ -14,13 +15,20 @@ target_include_directories(
    PUBLIC
    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-
+add_executable(
+  merge_sort
+  src/merge_main.cpp
+)
 add_executable(
   binary_search
   src/main.c
 
 )
-
+target_link_libraries(
+  merge_sort
+  PRIVATE
+  binary
+)
 target_link_libraries(
    binary_search
    PRIVATE
