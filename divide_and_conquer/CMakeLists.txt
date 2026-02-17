@@ -7,6 +7,7 @@ add_library(
   STATIC
   src/binary_search.c
   src/merge_sort.cpp
+  src/quick.cpp
 
 )
 
@@ -20,12 +21,21 @@ add_executable(
   src/merge_main.cpp
 )
 add_executable(
+  quick_sort
+  src/quick_main.cpp
+)
+add_executable(
   binary_search
   src/main.c
 
 )
 target_link_libraries(
   merge_sort
+  PRIVATE
+  binary
+)
+target_link_libraries(
+  quick_sort
   PRIVATE
   binary
 )
