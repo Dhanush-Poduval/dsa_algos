@@ -8,7 +8,7 @@ struct items {
 
 };
 
-void knapsack_h(struct items item );
-void sort(struct items item , int n);
+void knapsack_h(struct items *item ,int n);
+void sort(struct items *item , int n);
 
 #endif
