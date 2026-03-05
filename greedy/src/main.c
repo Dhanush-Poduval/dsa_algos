@@ -4,7 +4,7 @@
 
 
 int main(){
-  struct items item[4] {
+  struct items item[4]= {
     {200,40},
     {100,10},
     {120,20},
