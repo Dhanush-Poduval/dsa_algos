@@ -16,7 +16,7 @@ void sort(const struct items *item , int n){
 }
 
 
-void knapsack_h(const struct items *item){
+void knapsack_h(const struct items *item,int n){
   for(int i=0;i<n;i++){
     &(item[i]->ratio)=(&(item[i]->value)/&(item[i]->weight));
 
