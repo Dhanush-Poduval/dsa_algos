@@ -32,14 +32,16 @@ void knapsack_h(struct items *item,int n){
       max_profit+=curr_value;
       capacity-=item[i].weight; 
     }
-    if((item[i].weight)>capacity){
-      curr_value=(capacity/(item[i].weight))*(item[i].value);
+    if(item[i].weight>capacity){
+      curr_value=((float)capacity/(float)item[i].weight)*(item[i].value);
       max_profit+=curr_value;
+      break;
     }
 
-    printf("THe maximum profit that can be formed is : %d\n",max_profit);
+
 
 
   };
+  printf("THe maximum profit that can be formed is : %d\n",max_profit);
 
 }
