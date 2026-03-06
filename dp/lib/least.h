@@ -5,6 +5,6 @@ struct lcp {
    int value;
 };
 
-int least_common(string s1, string s2);
+int least_common( char s1[], char s2[]);
 
 #endif
