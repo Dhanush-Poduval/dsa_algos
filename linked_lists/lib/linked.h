@@ -3,14 +3,14 @@
 
 struct Node {
    struct Node *left;
-   int *value;
+   int value;
    struct Node *next;
 
 };
 
-void insert_head(struct Node *head ,int value);
-void insert_tail(struct Node *head, int value);
-void insert_middle(struct Node *head, int value);
+void insert_head(struct Node **head ,int value);
+void insert_tail(struct Node **head, int value);
+void insert_middle(struct Node **head, int value);
 void print_list(struct Node *head);
 
 #endif
