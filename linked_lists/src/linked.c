@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "linked_list.h"
+#include "linked.h"
 #include <math.h>
 
 void insert_head(struct Node **node,int data){
@@ -13,31 +13,35 @@ void insert_head(struct Node **node,int data){
 
 void insert_tail(struct Node **node , int data){
   struct Node *new_node=malloc(sizeof(struct Node));
-  while(node->next!=NULL){
-    node=node->next;
+  struct Node *temp=*node;
+  while(temp->next!=NULL){
+    temp=temp->next;
   }
-  node->next=new_node;
-  new_node->left=*node;
+  new_node->value=data;
+  temp->next=new_node;
+  new_node->left=temp;
   new_node->next=NULL;
-  printf("Inserted the node with value %d at the end of the linked list \n",new_node->next);
+  printf("Inserted the node with value %d at the end of the linked list \n",new_node->value);
 
 };
 
 void insert_middle(struct Node **node , int data,int position){
   struct Node *new_node=malloc(sizeof(struct Node));
-  while(node->value !=position){
-    node->next=node;
+  struct Node *temp=*node;
+  while(temp->next->value !=position){
+    temp=temp->next;
   };
   new_node->value=data;
-  new_node->next=node->next->next;
-  new_node->left=*node;
-  node->next=new_node;
+  new_node->next=temp->next;
+  new_node->left=temp;
+  temp->next=new_node;
   printf("Node inserted in the middle with the elements %d in the linked list\n",data);
 };
 
 void print_linked_list(struct Node *node){
   while(node!=NULL){
      printf("%d",node->value);
+     node=node->next;
   };
 
 };

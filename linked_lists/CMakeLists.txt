@@ -5,7 +5,7 @@ project(linked_list)
 add_library(
   ll
   STATIC
-  src/linked_list.c
+  src/linked.c
 
 )
 
