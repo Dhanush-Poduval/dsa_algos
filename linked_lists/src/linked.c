@@ -65,3 +65,41 @@ void reverse_linked_list(struct Node *node ){
   printf("\n");
 
 }
+
+void delete_head(struct Node **node){
+  struct Node *temp =*node;
+  int prev_data=temp->value;
+  *node=temp->next;
+  (*node)->left=NULL;
+  free(temp);
+  printf("Deleted the node pointing to the head of the linked list with value %d \n",prev_data);
+}
+
+void delete_tail(struct Node **node){
+ struct Node *temp =*node;
+ struct Node *prev=NULL;
+ while(temp->next !=NULL){
+   prev=temp;
+   temp=temp->next;
+ };
+ prev->next=NULL;
+ temp->left=NULL;
+ free(temp);
+ printf("Deleted the node at the end of the linked list \n");
+}
+
+void delete_middle(struct Node **head , int position){
+  int i=0;
+  struct Node *temp =*head;
+  struct Node *prev=NULL;
+  while(i!=position && temp->next!=NULL){
+    prev=temp;
+    temp=temp->next;
+    i+=1;
+  };
+  prev->next=temp->next;
+  temp->next->left=prev;
+  free(temp);
+  printf("Deleted the node present of position %d \n",position);
+}
+
