@@ -33,4 +33,11 @@ void insert_middle(struct Node **node , int data,int position){
   new_node->left=*node;
   node->next=new_node;
   printf("Node inserted in the middle with the elements %d in the linked list\n",data);
-}
+};
+
+void print_linked_list(struct Node *node){
+  while(node!=NULL){
+     printf("%d",node->value);
+  };
+
+};
