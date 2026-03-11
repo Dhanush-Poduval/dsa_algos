@@ -43,5 +43,25 @@ void print_linked_list(struct Node *node){
      printf("%d",node->value);
      node=node->next;
   };
+  printf("\n");
 
 };
+
+void reverse_linked_list(struct Node *node ){
+  struct Node *curr =node;
+  struct Node *prev=NULL;
+  struct Node *next=NULL;
+  while(curr !=NULL){
+    next=curr->next;
+    curr->next=prev;
+    prev=curr;
+    curr=next;
+  };
+  while(prev !=NULL){
+    printf ("%d -> ",prev->value);
+    prev=prev->next;
+  };
+  printf("NULL");
+  printf("\n");
+
+}

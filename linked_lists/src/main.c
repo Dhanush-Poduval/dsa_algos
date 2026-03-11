@@ -9,6 +9,7 @@ int main(){
   insert_tail(&head,20);
   insert_middle(&head,30,20);
   print_linked_list(head);
+  reverse_linked_list(head);
 
 
 
