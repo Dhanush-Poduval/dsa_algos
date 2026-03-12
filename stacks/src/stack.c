@@ -5,6 +5,11 @@
 void stack_linked(struct Node **head , int value){
   struct Node *new_node=maloc(sizeof(struct Node));
   struct Node *temp=*head;
+  if(temp==NULL){
+    new_node->value=value;
+    new_node->next=NULL;
+    temp=new_node;
+  }
   while (temp->next !=NULL){
     temp=temp->next;
   };
